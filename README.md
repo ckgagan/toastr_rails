@@ -18,10 +18,10 @@ And then execute:
 ## Usage
 
 Add to your application.js and application.css:
-  
+
     //= require toastr_rails
 
-You can put this in your layout/application.html file if you want to chach flash messages in a toast: 
+You can put this in your layout/application.html file if you want to chach flash messages in a toast:
 
     = render 'toastr_rails/flash'
 
@@ -43,9 +43,17 @@ You can put this in your layout/application.html file if you want to chach flash
       "hideMethod": "fadeOut"
     };
 
-    // css
+## toastr placement
+
+    // add this to your application.css
+    if you want to place toastr to top
     #toast-container{
       top: 70px;
+    }
+
+    if you want to place toastr to bottom
+    #toast-container{
+      bottom: 0px
     }
 
 For all other options you can visit [http://codeseven.github.io/toastr/](http://codeseven.github.io/toastr/)
